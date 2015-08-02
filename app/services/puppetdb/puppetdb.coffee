@@ -92,7 +92,7 @@ angular.module('app').factory 'PuppetDB', ($http,
 
       params.query = angular.toJson(query)
       if endpoint in ['nodes', 'reports', 'events', 'facts']
-        params['include-total'] = true
+        params['include_total'] = true
 
       # Start querying
       @query(endpoint, params)

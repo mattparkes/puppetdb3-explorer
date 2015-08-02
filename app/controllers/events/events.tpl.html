@@ -83,7 +83,7 @@
   <tbody ng-repeat="event in events.events">
     <tr ng-class="events.color(event.status)" ng-click="events.toggleRow(event)">
       <td>{{event["certname"]}}</td>
-      <td>{{event["resource-type"]}}</td>
+      <td>{{event["resource_type"]}}</td>
       <td>{{event["resource-title"]}}</td>
       <td>{{event["property"]}}</td>
       <td>{{event["old-value"]}}</td>
@@ -97,8 +97,8 @@
             <td>{{event["message"]}}</td>
           </tr>
           <tr>
-            <th>Containing-class</th>
-            <td>{{event["containing-class"]}}</td>
+            <th>containing_class</th>
+            <td>{{event["containing_class"]}}</td>
           </tr>
           <tr>
             <th>Containment-path</th>

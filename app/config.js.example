@@ -27,7 +27,7 @@ DASHBOARD_PANELS = [
   {
     name: 'Unresponsive nodes',
     type: 'danger',
-    query: '#node.report-timestamp < @"now - 2 hours"'
+    query: '#node.report_timestamp < @"now - 2 hours"'
   },
   {
     name: 'Nodes in production env',
